@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     libffi-dev \
     python3-dev \
-    pkg-config && \
+    pkg-config  \
+    default-libmysqlclient-dev && \
     rm -rf /var/lib/apt/lists/*  # Очистка кэша apt
 
 # Установка Python-пакетов
